@@ -1,5 +1,6 @@
 name: Build
 "on":
+  workflow_dispatch: {}
   workflow_call:
     inputs:
       MOZ_BUILD_DATE:
