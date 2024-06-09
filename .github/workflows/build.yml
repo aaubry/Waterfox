@@ -72,9 +72,6 @@ jobs:
     name: Linux
     runs-on:
       - warp-ubuntu-latest-x64-16x
-    concurrency:
-      group: "${{ github.head_ref }}-linux-x64"
-      cancel-in-progress: true
     env:
       MOZCONFIG: .mozconfig-x86_64-pc-linux-gnu
       ARCH: x86_64-pc-linux-gnu
